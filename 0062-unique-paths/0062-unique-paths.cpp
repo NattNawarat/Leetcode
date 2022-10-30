@@ -8,7 +8,6 @@ public:
             for(int j = 1 ; j < n ; j++ ){
                 dp.at(j) += dp.at(j-1);
             }
-            for (int x : dp) cout << x << " ";
         }
         return dp.at(n-1);
     }
