@@ -8,7 +8,7 @@ public:
             curr_prod *= nums.at(i);
             if (curr_prod == 0){
                 curr_prod = nums.at(i);
-                Max = max(0,Max);
+                //Max = max(0,Max);
             }
             Max = max(curr_prod,Max);
         }
@@ -18,7 +18,7 @@ public:
             curr_prod *= nums.at(i);
             if (curr_prod == 0){
                 curr_prod = nums.at(i);
-                Max = max(0,Max);
+                //Max = max(0,Max);
             }
             Max = max(curr_prod,Max);
         }
