@@ -19,7 +19,6 @@ public:
                 }
                 Ans = max(Ans,count);
                 count = 0;
-                curr_num = 0;
             }
         }
         return Ans;
