@@ -17,9 +17,9 @@ public:
             }
         }
         for (int i = 0 ; i < n; i++){
-            wall.at(i) = min(M_L.at(i), M_R.at(i));
+         
             if(i != 0 && i != n-1){
-                cnt += wall.at(i) - height.at(i);
+                cnt += min(M_L.at(i), M_R.at(i)) - height.at(i);
             }
         }
         return cnt;
