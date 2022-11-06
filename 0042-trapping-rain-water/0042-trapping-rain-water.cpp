@@ -17,16 +17,7 @@ public:
             }
         }
         for (int i = 0 ; i < n; i++){
-            printf("%d ",M_L.at(i));
-        }
-        printf("\n");
-        for (int i = 0 ; i < n; i++){
-            printf("%d ",M_R.at(i));
-        }
-        printf("\n");
-        for (int i = 0 ; i < n; i++){
             wall.at(i) = min(M_L.at(i), M_R.at(i));
-            printf("%d ",wall.at(i));
             if(i != 0 && i != n-1){
                 cnt += wall.at(i) - height.at(i);
             }
