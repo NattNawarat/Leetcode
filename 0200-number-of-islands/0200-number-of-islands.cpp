@@ -13,7 +13,6 @@ public:
         int count = 0;
         for(int i = 0 ; i < n ; i++){
             for(int j = 0 ; j < m ; j++){
-                printf("%d",(!visit[i][j]) && (grid.at(i).at(j) == '1'));
                 if ((!visit[i][j]) && (grid.at(i).at(j) == '1')){
                     queue<int> BFS_i;
                     queue<int> BFS_j;
@@ -55,7 +54,6 @@ public:
                     }
                 }
             }
-            printf("\n");
         }
         return count;
     }
