@@ -19,7 +19,6 @@ public:
             int jump_length = nums[curr_pos];
             int number_of_jump = curr_node.second;
             visit[curr_pos] = true;
-            printf("%d %d %d\n",curr_pos,curr_pos + jump_length,number_of_jump);
             if(curr_pos + jump_length >= n-1)
             {
                 ans = number_of_jump+1;
