@@ -6,9 +6,9 @@ class Solution:
         n = len(s)
         Max = 0
         while (r < n):
-            print(l,r,s[r])
+            #print(l,r,s[r])
             if s[r] in seen:
-                print("HIT")
+                #print("HIT")
                 # clean hash table to 
                 start = l
                 end = seen[s[r]]+1
