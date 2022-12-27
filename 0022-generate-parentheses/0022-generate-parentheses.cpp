@@ -20,7 +20,7 @@ public:
     }
     vector<string> generateParenthesis(int n) {
         addParenthesis(n,n,"");
-        int N = ans.size();
+
         return ans;
     }
 };
