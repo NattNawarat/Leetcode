@@ -21,9 +21,6 @@ public:
     vector<string> generateParenthesis(int n) {
         addParenthesis(n,n,n,"");
         int N = ans.size();
-        for(int i = 0 ; i < N ; i ++){
-            cout<< ans.at(i)<<endl;
-        }
         return ans;
     }
 };
