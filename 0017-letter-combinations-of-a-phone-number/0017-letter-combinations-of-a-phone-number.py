@@ -1,6 +1,6 @@
 class Solution(object):
     def addLetter(self,index,combination):
-        print("index",index,len(self.digits))
+        #print("index",index,len(self.digits))
         if (index == len(self.digits)):
             self.combinations.append(combination)
             return
@@ -8,7 +8,7 @@ class Solution(object):
         digit = self.digits[index]
         
         for char in self.digit_table[digit]:
-            print(index+1,combination+char)
+            #print(index+1,combination+char)
             self.addLetter(index + 1,combination+char)
             
     def letterCombinations(self, digits):
