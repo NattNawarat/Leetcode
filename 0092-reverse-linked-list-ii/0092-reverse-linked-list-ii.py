@@ -38,7 +38,7 @@ class Solution(object):
             print(curr_node.val)
             curr_node = curr_node.next
             i+=1
-        print(curr_node.val)
+        #print(curr_node.val)
     
     def reverseBetween(self, head, left, right):
         """
