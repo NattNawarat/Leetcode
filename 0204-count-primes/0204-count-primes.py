@@ -14,6 +14,7 @@ class Solution(object):
             if not isPrime[i]:
                 continue
             count += 1
-            for j in range(2*i,n,i):
-                isPrime[j] = False
+            if(i < int(n**0.5)+1):
+                for j in range(2*i,n,i):
+                    isPrime[j] = False
         return count
