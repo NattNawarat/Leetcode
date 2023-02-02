@@ -5,7 +5,6 @@ class Solution(object):
     
     def findMinimum(self,nums,l,r):
         # like merge sort but return minum value and index instead
-        print(l,r)
         if l == r:
             return (nums[l],l)
         if l == r-1:
@@ -31,12 +30,7 @@ class Solution(object):
             leftNumber = self.unpivotNums(l)
             rightNumber = self.unpivotNums(r)
             midNumber = self.unpivotNums(mid)
-            print("_______________________")
-            print(f"left {l} {leftNumber}")
-            print(f"mid {mid} {midNumber}")
-            print(f"right {r} {rightNumber}")
             if midNumber == target:
-                #print(f"FOUND {mid} {midNumber} {target}")
                 return (mid+self.minIndex)%len(self.nums)
             else:
                 if midNumber < target:
@@ -59,7 +53,6 @@ class Solution(object):
         n = len(nums)
         self.nums = nums
         self.minIndex = self.findMinimum(nums,0,n-1)[1]
-        print(f"MIN INDEX {self.minIndex}")
         return self.BinarySearch(nums,target)
         return -1
 
