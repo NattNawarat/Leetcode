@@ -6,7 +6,7 @@ class Solution(object):
             
         for i,num in enumerate(nums):
             if not used[i]: 
-                newCombination = combination + [nums[i]]
+                newCombination = combination + [num]
                 newUsed = used[:]
                 newUsed[i] = True
                 # add that nums[i] into combination and call the same function again
@@ -21,6 +21,6 @@ class Solution(object):
         for i,num in enumerate(nums):
             initUsed = [False]*len(nums)
             initUsed[i] = True
-            self.insertCharacter(nums,initUsed,[nums[i]]) 
+            self.insertCharacter(nums,initUsed,[num]) 
         
         return self.answer
