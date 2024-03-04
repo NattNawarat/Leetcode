@@ -7,12 +7,12 @@ class Trie {
     }
 
     public void insert(String word) {
-        System.out.println("insert");
+        //System.out.println("insert");
         addLeaf(this,word, 0);
     }
 
     public boolean search(String word) {
-        System.out.println("search");
+        //System.out.println("search");
         Trie endNode = travel(this,word,0);
         if (endNode == null){
             return false;
@@ -21,7 +21,7 @@ class Trie {
     }
 
     public boolean startsWith(String prefix) {
-        System.out.println("startWith");
+        //System.out.println("startWith");
         Trie endNode = travel(this,prefix,0);
         return endNode != null;
     }
@@ -31,7 +31,7 @@ class Trie {
             return currentNode;
         } else {
             char currentCharacter = word.charAt(charIndex);
-            System.out.println(currentCharacter);
+            //System.out.println(currentCharacter);
             if(!currentNode.leaf.containsKey(currentCharacter)){
                 return null;
             }
@@ -48,10 +48,10 @@ class Trie {
         }
         char currentCharacter = word.charAt(charIndex);
         if(!currentNode.leaf.containsKey(currentCharacter)){
-            System.out.print("add ");
+            //System.out.print("add ");
             currentNode.leaf.put(currentCharacter, new Trie());
         }
-        System.out.println(currentCharacter);
+        //System.out.println(currentCharacter);
         addLeaf(currentNode.leaf.get(currentCharacter), word, charIndex + 1);
     }
 }
